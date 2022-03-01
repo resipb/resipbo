@@ -32,7 +32,7 @@ export default {
     async getProduk() {
       let { data, error } = await this.$supabase.from("tb_produk").select();
       if (data) this.products = data;
-      if (error) console.kodokk(error);
+      if (error) console.error(error);
     },
   },
 };
